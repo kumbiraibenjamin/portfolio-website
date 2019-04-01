@@ -1,1 +1,148 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Color Pallete
+------------------------------------*/
+$orange: #ff6700;
+$light-gray: #EBEBEB;
+$gray: #C0C0C0;
+$light-blue: #3A6EA5;
+$dark-blue: #004E98;
+$dark-purple: #2B2D42;
+
+
+
+/* Global Styles
+-----------------------------------*/ 
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: $orange;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Caveat', cursive;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 60px;    
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: auto;
+}
+
+/* Header and Footer 
+-------------------------------*/
+.header, .footer {
+    background: $dark-purple;
+    color: $light-gray;
+}
+
+/* Header 
+---------------------------------*/
+.header h1, .header h2 {
+    color: $light-gray;
+    margin: 0;
+
+}
+
+
+
+.header p {
+    clear: both;
+}
+
+.header {
+    .col-wide {
+        width: 80%;
+        float: left;
+    }
+    .col-narrow {
+        width: 20%;
+        float: left;
+    }
+}
+
+.profile-image {
+    width: 120px;
+    border-radius: 50%;
+
+}
+
+/* Footer 
+---------------------------------*/
+
+.footer {
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Main 
+--------------------------------*/
+
+.main {
+    background: $light-gray;
+}
+
+/* Education 
+--------------------------------*/
+
+.education {
+    background: $light-blue;
+    color: $light-gray;
+}
+
+/* Work Experience
+--------------------------------*/
+.work-experience {
+    background: $light-gray;
+
+    .col-left {
+        width: 50%;
+        float: left;
+    }
+    .col-right {
+        width: 50%;
+        float: left;
+    }
+}
+
+
+
+
+
