@@ -7,6 +7,7 @@ import { WorkExperienceComponent } from './components/work-experience/work-exper
 import { EducationComponent } from './components/education/education.component';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FreelanceComponent } from './components/freelance/freelance.component';
 
 export const routes = [];
 
@@ -16,7 +17,7 @@ export const routes = [];
     MainComponent, 
     FooterComponent, 
     WorkExperienceComponent, 
-    EducationComponent
+    EducationComponent, FreelanceComponent
   ],
   imports: [
     CommonModule,

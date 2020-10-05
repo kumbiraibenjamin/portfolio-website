@@ -1,215 +1,205 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
 /* Color Pallete
 ------------------------------------*/
 $orange: #ff6700;
-$light-gray: #EBEBEB;
-$gray: #C0C0C0;
-$light-blue: #3A6EA5;
-$dark-blue: #004E98;
-$dark-purple: #2B2D42;
-
-
+$light-gray: #ebebeb;
+$gray: #c0c0c0;
+$light-blue: #3a6ea5;
+$dark-blue: #004e98;
+$dark-purple: #2b2d42;
 
 /* Global Styles
------------------------------------*/ 
+-----------------------------------*/
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
 }
 
 a {
-    color: $orange;
+  color: $orange;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Caveat', cursive;
-    font-weight: lighter;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Caveat", cursive;
+  font-weight: lighter;
 }
 
 h1 {
-    font-size: 60px;  
-    @media (max-width:500px) {
-        font-size: 40px;   
-    }  
+  font-size: 60px;
+  @media (max-width: 500px) {
+    font-size: 40px;
+  }
 }
 
 h2 {
-    font-size: 40px;
-    margin-top: 0;
-    @media (max-width:500px) {
-        font-size: 30px;   
-    }  
+  font-size: 40px;
+  margin-top: 0;
+  @media (max-width: 500px) {
+    font-size: 30px;
+  }
 }
 
 h3 {
-    font-size: 30px;
-    @media (max-width:500px) {
-        font-size: 25px;   
-    }
+  font-size: 30px;
+  @media (max-width: 500px) {
+    font-size: 25px;
+  }
 }
 
 h4 {
-    font-size: 25px;
-    @media (max-width:500px) {
-        font-size: 20px;   
-    }
+  font-size: 25px;
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .content-wrap {
-
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 60px 50px;
-    overflow: auto;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
 }
 
 /* Header and Footer 
 -------------------------------*/
-.header, .footer {
-    background: $dark-purple;
-    color: $light-gray;
+.header,
+.footer {
+  background: $dark-purple;
+  color: $light-gray;
 }
 
 /* Header 
 ---------------------------------*/
-.header h1, .header h2 {
-    color: $light-gray;
-    margin: 0;
-
+.header h1,
+.header h2 {
+  color: $light-gray;
+  margin: 0;
 }
 
 nav {
- text-align: center;
- background: $light-gray;
- position: fixed;
- top: 0;
- width: 100%;
- z-index: 100;
+  text-align: center;
+  background: $light-gray;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 nav a {
-    display: inline-block;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: $dark-purple;
-
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $dark-purple;
 }
 
 .header p {
-    clear: both;
+  clear: both;
 }
 
 .header {
-    padding-top: 50px;
-    position: relative;
-    @media (min-width: 900px) {
-        .col-wide {
-            width: 80%;
-            float: left;
-        }
-        .col-narrow {
-            width: 20%;
-            float: left;
-        }
+  padding-top: 50px;
+  position: relative;
+  @media (min-width: 900px) {
+    .col-wide {
+      width: 80%;
+      float: left;
     }
-    @media (max-width:500px) {
-        text-align: center;  
+    .col-narrow {
+      width: 20%;
+      float: left;
     }
-
+  }
+  @media (max-width: 500px) {
+    text-align: center;
+  }
 }
 
 .profile-image {
-    width: 120px;
-    border-radius: 50%;
-
+  width: 120px;
+  border-radius: 50%;
 }
 
 .btn {
-    background: $orange;
-    padding: 10px;
-    color: $light-gray;
-    text-decoration: none;
-    display: inline-block;
-
-} 
+  background: $orange;
+  padding: 10px;
+  color: $light-gray;
+  text-decoration: none;
+  display: inline-block;
+}
 
 .download {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Footer 
 ---------------------------------*/
 
 .footer {
-    text-align: center;
+  text-align: center;
 }
 
 .contact-info a {
-    padding: 10px;
-    display: inline-block;
+  padding: 10px;
+  display: inline-block;
 }
 
 /* Main 
 --------------------------------*/
 
 .main {
-    background: $light-gray;
+  background: $light-gray;
 }
 
 /* Education 
 --------------------------------*/
 
 .education {
-    background: 
-        linear-gradient(rgba(58, 110, 165, 0.9), rgba(58, 110, 165, 0.9)), 
-        url(./assets/images/education.jpg) 
-        no-repeat
-        fixed;
-    background-size: cover;
-    color: $light-gray;
+  background: linear-gradient(rgba(58, 110, 165, 0.9), rgba(58, 110, 165, 0.9)),
+    url(./assets/images/education.jpg) no-repeat fixed;
+  background-size: cover;
+  color: $light-gray;
+}
+
+/* Freelance 
+--------------------------------*/
+
+.freelance {
+  background: linear-gradient(rgba(45, 45, 66, 0.94), rgba(45, 45, 66, 0.94)),
+    url(./assets/images/freelance.jpg) no-repeat fixed;
+  background-size: cover;
+  color: $light-gray;
 }
 
 /* Work Experience
 --------------------------------*/
 .work-experience {
-    background: 
-        linear-gradient(rgba(192, 192, 192, 0.9), rgba(192, 192, 192, 0.9)), 
-        url(./assets/images/work-experience.jpg) 
-        no-repeat
-        fixed;
-    background-size: cover;
-
-    @media (min-width: 900px) {
-        .col-left {
-            width: 50%;
-            float: left;
-        }
-        .col-right {
-            width: 50%;
-            float: left;
-        }
-    } 
-
+  background: linear-gradient(
+      rgba(192, 192, 192, 0.9),
+      rgba(192, 192, 192, 0.9)
+    ),
+    url(./assets/images/work-experience.jpg) no-repeat fixed;
+  background-size: cover;
 }
-
-
-
-
-
-
